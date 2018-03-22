@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/layout_bg"
+    xmlns:tools="http://schemas.android.com/tools"
+   >
+
+
+    <Button
+        android:id="@+id/db_update"
+        style="@android:style/Widget.Button.Toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:textSize="12sp"
+        android:visibility="visible"
+        android:layout_below="@+id/buttonmap"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:enabled="true"
+        android:hint="Enter Phone No"
+        android:selectAllOnFocus="false"
+        android:textAlignment="center"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textColorHint="@color/dot_light_screen2"
+        android:textSize="20sp"
+        android:layout_below="@+id/fname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp" />
+
+    <EditText
+        android:id="@+id/fname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:enabled="true"
+        android:hint="Enter First Name"
+        android:selectAllOnFocus="false"
+        android:textAlignment="center"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textColorHint="@color/dot_light_screen2"
+        android:textSize="20sp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignStart="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phone"
+        android:layout_toEndOf="@+id/textView4"
+        android:ellipsize="end"
+        android:enabled="true"
+        android:hint="Email Address "
+        android:selectAllOnFocus="false"
+        android:textAlignment="center"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textColorHint="@color/dot_light_screen2"
+        android:textSize="20sp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout"
+        android:layout_below="@+id/email"
+        android:layout_centerHorizontal="true">
+
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/sname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:enabled="true"
+        android:hint="Enter Last Name"
+        android:selectAllOnFocus="false"
+        android:textAlignment="center"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textColorHint="@color/dot_light_screen2"
+        android:textSize="20sp"
+        android:layout_below="@+id/fname"
+        android:layout_toEndOf="@+id/textView4" />
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="376dp"
+        android:layout_height="wrap_content"
+
+        android:text="Register Distributor"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="23dp" />
+
+
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/clear"
+        android:layout_marginTop="35dp" />
+
+    <Button
+        android:id="@+id/clear_db"
+        style="@android:style/Widget.Button.Toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="test"
+        android:text="Clear"
+        android:textSize="14sp"
+        android:visibility="visible"
+        android:layout_below="@+id/db_update"
+        android:layout_alignStart="@+id/db_update" />
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="bottom"
+        android:background="@drawable/layout_bg1"
+        app:menu="@menu/navigation"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/buttonmap"
+        style="@android:style/Widget.Button.Toggle"
+        android:layout_width="126dp"
+        android:layout_height="wrap_content"
+        android:text="Set Location"
+        android:layout_below="@+id/email"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

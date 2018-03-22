@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Sales Rep</string>
+    <string name="title_activity_maps">Sales Rep</string>
+
+    <string name="title_home">Map</string>
+    <string name="title_dashboard"> Personnel </string>
+    <string name="title_personal">Outlets </string>
+    <string name="mytask">MyTask </string>
+    <string name="exit">Exit</string>
+</resources>

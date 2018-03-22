@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/layout_bg"
+    tools:context="com.example.florence.mapsagain.Retrieve_call_sms"
+>
+        <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+            android:background="@drawable/layout_bg"
+        android:layout_gravity="bottom"
+        app:menu="@menu/navigation" />
+
+    <Button
+        android:id="@+id/btn_messages"
+        style="@android:style/Widget.Button.Toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Messages"
+        android:textSize="12sp"
+        android:layout_below="@+id/navigation"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/btn_call"
+        style="@android:style/Widget.Button.Toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Call log"
+        android:layout_above="@+id/scrollView3"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/save_draft"
+        style="@android:style/Widget.Button.Toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_messages"
+        android:layout_alignBottom="@+id/btn_messages"
+        android:layout_alignParentEnd="true"
+        android:text="Save ->Draft" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@+id/navigation"
+        android:layout_marginStart="50dp"
+        android:text="Button" />
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/btn_messages"
+        android:layout_alignParentStart="true"
+        android:id="@+id/scrollView3">
+
+        <TextView
+            android:id="@+id/textview_call"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/btn_draft"
+            android:layout_below="@+id/btn_messages"
+            android:layout_marginTop="11dp"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textSize="16sp" />
+
+
+    </ScrollView>
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:scrollbars="horizontal|vertical"></ListView>
+
+</RelativeLayout>
+

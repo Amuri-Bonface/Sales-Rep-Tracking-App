@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1"
+    android:background="@drawable/layout_bg2">
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/allocated"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.05"
+        android:textSize="18sp"
+        tools:text="" />
+
+    <TextView
+        android:id="@+id/distributor_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.05"
+        android:textSize="18sp"
+        tools:text="" />
+   </LinearLayout>
+    <EditText
+        android:id="@+id/taskname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="TASK NAME"
+        android:inputType="textPersonName" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/initstate"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Initial State"
+            android:inputType="textMultiLine|textLongMessage"
+            android:scrollIndicators="right"
+            android:selectAllOnFocus="false" />
+    </ScrollView>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/actiontaken"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Action"
+            android:inputType="textMultiLine|textLongMessage"
+            android:scrollIndicators="right"
+            android:selectAllOnFocus="false" />
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/final_verdict"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Final Verdict"
+            android:inputType="textMultiLine|textLongMessage"
+            android:scrollIndicators="right"
+            android:selectAllOnFocus="false" />
+    </ScrollView>
+
+    <EditText
+        android:id="@+id/expiry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Date"
+        android:inputType="date" />
+
+    <ToggleButton
+        android:id="@+id/submit_complete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ToggleButton"
+        android:textOff="Submit"
+        android:textOn="Submit"
+        android:textSize="18sp" />
+</LinearLayout>
